@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-image: url(../imges/books.jpg);
+    height:100vh ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav{
+    display: flex;
+    padding: 5px;
+    background-color: rgba(0, 0, 0,0.3);
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav .bars{
+    display: none;
+}
+.nav .bars i{
+    font-size: 20px;
+    color: aliceblue;
+
+}
+.nav ul{
+    display: flex;
+   
+  
+    
+}
+.nav ul li{
+    list-style-type: none;
+    margin: 10px 5px;
+
+}
+.nav ul li a{
+    padding: 10px 5px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: aliceblue;
+    transition: all 0.3s;
+}
+.nav ul li a:hover{
+    background-color: rgb(114, 114, 133);
+
+}
+.main .content {
+    text-align: center;
+    
+}
+.main .content div img{
+    width: 50%;
+    
+}
+
+.main .content h1{
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+.main .content button{
+    margin: 0px 10px;
+    padding: 10px 5px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    background-color: brown;
+    border-radius: 20px;
+    font-size: 20px;
+    color: aliceblue;
+    border: 2px solid black;
+    transition: all .5s;
+}
+.main .content button:hover{
+    background-color: rgb(135, 135, 153);
+    border-radius: 20px;
+    transform: scale(1.2);
+  
+}
+/*==============================================*/
+.mission {
+  background-image: url(../imges/logo2.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.mission .layout{
+    padding: 20px 0px;
+    background-color: rgba(256, 256, 256,0.4);
+    
+}
+.mission .layout h2{
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    border: 3px solid black;
+    border-radius: 15px;
+    border-top: 0px;
+   
+}
+
+.mission .layout .content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mission .layout .content .imges{ 
+    width: 50%;
+    text-align:center;
+  
+}
+.mission .layout .content .imges img{ 
+    width: 50%;
+    
+  
+}
+.mission .layout .content .missions{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    text-align: center;
+    justify-content: space-between;
+   
+
+}
+.mission .layout .content .missions .card{
+   width: 45%;
+
+}
+.mission .layout .content .missions .card h3{
+    color: rgb(239, 235, 235);
+    background-color: rgb(106, 27, 27);
+    border-radius: 20px;
+    border: 3px solid rgb(68, 2, 2);
+}
+
+@media(max-width:991px){
+    .mission .layout .content .missions{
+        justify-content: center;
+    }
+    .mission .layout .content .missions .card{
+        width: 70%;
+
+    }
+ 
+}
+@media(max-width:776px){
+    .nav .bars{
+        display: block;
+    }
+    .nav ul{
+        display: none;
+        
+    }
+    .main .content img {
+        width: 100%;
+          
+      }
+      .mission .layout h2{
+        width: 40%;
+      }
+      .mission .layout .content .imges ,
+      .mission .layout .content .missions
+      { 
+        width: 100%;
+        
+      
+    }
+}
+@media(max-width:567px)
+{
+    .mission .layout h2{
+        width: 80%;
+      } 
+      .mission .layout .content .missions .card{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+
+    }
+}
